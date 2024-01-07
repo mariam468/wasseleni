@@ -1,33 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ Page</title>
-  <link rel="stylesheet" href="style.css">
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <body>
 
-  <header>
-    <h1>Frequently Asked Questions</h1>
-  </header>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
 
-  <section>
-    <div class="faq-item">
-      <div class="question">Q: Why did you take a favor from Wasselni?</div>
-      <div class="answer">A: Because the service is fast.</div>
-    </div>
+    <section>
+        <form id="contactForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <div class="faq-item">
-      <div class="question">Q: How was the customer dealing with the driver?</div>
-      <div class="answer">A: Handling was very good.</div>
-    </div>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <div class="faq-item">
-      <div class="question">Q: Are the prices good and different from abroad?</div>
-      <div class="answer">A: On the contrary, it is very good.</div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            
+           
+           
+
+            
+            <button onclick="checkRobot()">Submit</button></div>
+            <div id="result"></div>
+            </section>
+        </form>
+    
+  <!--footer-->
+  
+  <!-- FOOTER START -->
+  <div class="footer">
+    <div class="contain">
+    <div class="col">
+      <h1>Company Wasselni</h1>
+      <ul>
+        <li>➤ Get in touch</li>
+        <li>➤ Quik links</li>
+        <li>➤ Social Media</li>
+        
+      </ul>
     </div>
-  </section>
+    <div class="col">
+      <h1>GET IN TOUCH</h1>
+      <ul>
+        <li>➤ Lebanon</li>
+        <li>➤ Wasselni-info@gmail.com</li>
+        <li>➤ +961 76749252</li>
+        
+      </ul>
+    </div>
+    
+    <div class="col">
+      <h1>Quik links</h1>
+      <ul>
+        <li>➤ Drive with us</li>
+        <li>➤ Services</li>
+        <li>➤ Places</li>
+        <li>➤ FAQ</li>
+        <li>➤ Contact us</li>
+        
+      </ul>
+    </div>
+    
+    <div class="col social">
+      <h1>Social Media</h1>
+      <div class="social-icons">
+     <!-- Add font awesome icons -->
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+    
+      <!-- Add more social media icons as needed -->
+  </div>
+        
+    </div>
+  <div class="clearfix"></div>
+  </div>
+  <hr class="horizontal-line">
+  <div class="copy">
+  <p align="center">2023 © Wasselni.</p></div>
+  </div>
+  
+  <!-- END OF FOOTER -->
+    <script src="app.js"></script>
 
 </body>
 </html>
