@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Feedback Page</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Feedback Page</h1>
+  
+        <div class="image">
+        <img src="icons8-feedback-64.png"></div>
+    </header>
+    
+    <main>
+        <form id="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Feedback:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+        </form>
+
+        <div id="feedback-container">
+            <h2>Feedback Received</h2>
+            <ul id="feedback-list"></ul>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
